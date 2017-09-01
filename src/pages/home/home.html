@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Login Sencillo
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+ 
+ <ion-list>
+<form name="form"(ngSubmit)="login()"  novalidate>
+  <ion-item>
+    <ion-label fixed>Correo</ion-label>
+    <ion-input type="text" name="email" value="" [(ngModel)]="model.email" required></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label fixed>Contraseña</ion-label>
+    <ion-input type="password" name="contraseña" [(ngModel)]="model.password" required></ion-input>
+  </ion-item>
+<ion-item>
+<button ion-button>Entrar</button>
+</ion-item>
+</form>
+</ion-list>
+</ion-content>
